@@ -21,9 +21,6 @@
 		454752DE1E2D3DD100AB9CAE /* TogetherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454752B41E2D3A2400AB9CAE /* TogetherTests.swift */; };
 		454752E81E2D3DEF00AB9CAE /* Together.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 454751F91E2D356F00AB9CAE /* Together.framework */; };
 		454752EE1E2D3DF600AB9CAE /* TogetherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454752B41E2D3A2400AB9CAE /* TogetherTests.swift */; };
-		454752EF1E2D3EAC00AB9CAE /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = 454752B61E2D3A2400AB9CAE /* Info.plist */; };
-		454752F01E2D3EB000AB9CAE /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = 454752B61E2D3A2400AB9CAE /* Info.plist */; };
-		454752F11E2D3EB400AB9CAE /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = 454752B61E2D3A2400AB9CAE /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -492,7 +489,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				454752EF1E2D3EAC00AB9CAE /* Info.plist in Sources */,
 				454752DD1E2D3DD100AB9CAE /* TogetherTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -501,7 +497,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				454752F01E2D3EB000AB9CAE /* Info.plist in Sources */,
 				454752DE1E2D3DD100AB9CAE /* TogetherTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -510,7 +505,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				454752F11E2D3EB400AB9CAE /* Info.plist in Sources */,
 				454752EE1E2D3DF600AB9CAE /* TogetherTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1408,6 +1402,7 @@
 				454752CB1E2D3AFE00AB9CAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		454752D81E2D3B1600AB9CAE /* Build configuration list for PBXNativeTarget "Together macOSTests" */ = {
 			isa = XCConfigurationList;
@@ -1416,6 +1411,7 @@
 				454752DA1E2D3B1600AB9CAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		454752EB1E2D3DEF00AB9CAE /* Build configuration list for PBXNativeTarget "Together iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -1424,6 +1420,7 @@
 				454752ED1E2D3DEF00AB9CAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
