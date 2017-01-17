@@ -9,11 +9,11 @@
 import Foundation
 import CoreGraphics
 
-protocol TogetherCompatible { }
+public protocol TogetherCompatible { }
 
 extension TogetherCompatible where Self: AnyObject {
     
-    func together(values: Self...) -> TogetherArray<Self> {
+    public func together(values: Self...) -> TogetherArray<Self> {
         var values = values
         values.append(self)
         return TogetherArray(values: values)
@@ -23,7 +23,7 @@ extension TogetherCompatible where Self: AnyObject {
 
 extension TogetherCompatible where Self: Hashable {
     
-    func together(values: Self...) -> TogetherSet<Self> {
+    public func together(values: Self...) -> TogetherSet<Self> {
         var values = values
         values.append(self)
         let set = Set(values)
@@ -33,7 +33,7 @@ extension TogetherCompatible where Self: Hashable {
 }
 
 
-struct TogetherArray<Base> {
+public struct TogetherArray<Base> {
     
     let values: [Base]
     
@@ -41,12 +41,12 @@ struct TogetherArray<Base> {
         self.values = values
     }
     
-    func `do`(_ block: @escaping (Base) -> Void) {
+    public func `do`(_ block: @escaping (Base) -> Void) {
         values.forEach { block($0) }
     }
 }
 
-struct TogetherSet<Base: Hashable> {
+public struct TogetherSet<Base: Hashable> {
     
     let values: Set<Base>
     
@@ -54,7 +54,7 @@ struct TogetherSet<Base: Hashable> {
         self.values = values
     }
     
-    func `do`(_ block: @escaping (Base) -> Void) {
+    public func `do`(_ block: @escaping (Base) -> Void) {
         values.forEach { block($0) }
     }
 }
